@@ -192,21 +192,21 @@ window.close()
 
 
 この例とワンショット ウィンドウの違いについて簡単に見てみましょう。
-まず、レイアウトの違いに気づくでしょう。 特に2つの変更が重要です。 1つは'入力'要素と'テキスト'要素の1つに'キー'パラメータを追加することです。 「キー」は要素の名前のようなものです。 または、Pythonの言葉では、辞書キーのようなものです。 '入力' 要素のキーは、コードの後半で辞書キーとして使用されます。
+まず、レイアウトの違いに気づくでしょう。 特に2つの変更が重要です。 1つは`Input`エレメントと`Text`エレメントの1つに`key`パラメータを追加することです。 「key」はエレメントの名前のようなものです。 または、Pythonの言葉では、辞書キーのようなものです。 `Input`エレメントのキーは、コードの後半で辞書キーとして使用されます。
 
 
-もう 1 つの違いは、この 'テキスト' 要素の追加です:
+もう1つの違いは、この `Text`エレメントの追加です:
 ```python
           [sg.Text(size=(40,1), key='-OUTPUT-')],
 ```
 
-すでにカバーしている「キー」という2つのパラメータがあります。 'サイズ' パラメーターは、文字で要素のサイズを定義します。 この場合、この 'テキスト' 要素は、高さ 1 文字で 40文字の幅であることを示しています。 テキスト文字列が指定されていないので、空白になります。 作成されたウィンドウにこの空白行が簡単に表示されます。
+すでにカバーしている「キー」という2つのパラメータがあります。 `Size`パラメーターはエレメントの文字数のサイズを定義します。 この場合、`Text`エレメントは幅40文字、高さ1文字であることを示しています。テキストの文字列が指定されていないので空白になることに注意してください。 作成されたウィンドウでは空白行が簡単に見れます。
 
-また 、ボタンを追加しました, "終了".
+また 、[終了]ボタンを追加しました。
 
-イベントループには、おなじみのwindow.read()'呼び出しがあります。
+イベントループには、おなじみの`window.read()`呼び出ししがあります。
 
-次の read は、次の if ステートメントです。
+読み込んだ後に続くのは、このif文です。
 ```python
     if event == sg.WINDOW_CLOSED or event == '終了':
         break
@@ -223,7 +223,7 @@ window.close()
     window['-OUTPUT-'].update('ハロー  ' + values['-INPUT-'] + "! PySimpleGUI をお試しいただきありがとうございます")
 ```
 
-この文は、キー '-OUTPUT-' を持つ 'Text' 要素を文字列で更新します。 ''-OUTPUT-'''''''は キー'-OUTPUT-'を持つ要素を見つけます。 そのキーは、空白の 'Text' 要素に属します。 その要素が検索から返されると、その 'update' メソッドが呼び出されます。 ほとんどすべての要素は'update'メソッドを持っています。 このメソッドは、要素の値を変更したり、要素の構成を変更したりするために使用します。
+この文は、キー '-OUTPUT-' を持つ 'Text' エレメントを文字列で更新します。 ''-OUTPUT-'''''''は キー'-OUTPUT-'を持つエレメントを見つけます。 そのキーは、空白の 'Text' エレメントに属します。 そのエレメントが検索から返されると、その 'update' メソッドが呼び出されます。 ほとんどすべてのエレメントは'update'メソッドを持っています。 このメソッドは、エレメントの値を変更したり、エレメントの構成を変更したりするために使用します。
 
 テキストを黄色にしたい場合は、'text_color'パラメータを'update' メソッドに追加して、次のようにして処理します。
 ```python
@@ -237,22 +237,22 @@ window.close()
 </p>
 
 
-各要素で使用できるパラメータは、docstrings と同様に[呼び出しリファレンスドキュメント](http://calls.PySimpleGUI.org)に記載されています。  PySimpleGUIには、利用可能なすべてのオプションを理解するのに役立つ広範なドキュメントall ofが用意されています。 調べる'Text' 要素の 'update' メソッドを検索すると、呼び出しの定義が見つかります:
+各エレメントで使用できるパラメータは、docstrings と同様に[呼び出しリファレンスドキュメント](http://calls.PySimpleGUI.org)に記載されています。  PySimpleGUIには、利用可能なすべてのオプションを理解するのに役立つ広範なドキュメントall ofが用意されています。 調べる'Text' エレメントの 'update' メソッドを検索すると、呼び出しの定義が見つかります:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/TextUpdate.jpg">
 </p>
 
 
-ご覧のように、いくつかのものは、'Text'要素に変更することができます。 呼び出しリファレンス ドキュメントは、PySimpleGUIでのプログラミングを簡単にする貴重なリソースです。
+ご覧のように、いくつかのものは、'Text'エレメントに変更することができます。 呼び出しリファレンス ドキュメントは、PySimpleGUIでのプログラミングを簡単にする貴重なリソースです。
 
 <hr>
 
-##レイアウトは面白いです笑! :laughing:
+##レイアウトは面白いです LOL! :laughing:
 
 ウィンドウのレイアウトは「リストのリスト」(LOL)です。 ウィンドウは"行"に分割されます。 ウィンドウの各行は、レイアウトのリストになります。 すべての リストを連結すると、レイアウトがあります。リストのリスト。
 
-行の定義方法を簡単に確認できるように、各行に追加の 'Text' 要素を追加したレイアウトは、以前と同じです:
+行の定義方法を簡単に確認できるように、各行に追加の 'Text' エレメントを追加したレイアウトは、以前と同じです:
 
 ```python
 layout = [  [sg.Text('ライン 1'), sg.Text("お名前は何ですか")],
@@ -260,7 +260,7 @@ layout = [  [sg.Text('ライン 1'), sg.Text("お名前は何ですか")],
             [sg.Text('ライン 3'), sg.Button('はい')] ]
 ```
 
-このレイアウトの各行は、ウィンドウのその行に表示される要素のリストです。
+このレイアウトの各行は、ウィンドウのその行に表示されるエレメントのリストです。
 
 
 <p align="center">
@@ -303,7 +303,7 @@ event, values = sg.Window('Window Title', [[sg.Text("お名前は何ですか？
 
 同じウィンドウが表示され、PySimpleGUIプログラムのセクションを示す例と同じ値が返されます。 非常に少ない量で多くのことを行うことができるため、Python コードに GUI をすばやく簡単に追加できます。 データを表示してユーザーから選択を得たい場合は、コードのページではなくコード行で行うことができます。
 
-短い手のエイリアスを使用すると、使用する文字を減らすことでコードの領域を節約できます。  すべての 要素には、使用できる短い名前が 1 つ以上含まれています。 たとえば、'Text' 要素は単に 'T' として記述できます。'Input' 要素は 'I' と 'ボタン' として書き込むことができます。 したがって、単一行のウィンドウ コードは次のようになります:
+短い手のエイリアスを使用すると、使用する文字を減らすことでコードの領域を節約できます。  すべての エレメントには、使用できる短い名前が 1 つ以上含まれています。 たとえば、'Text' エレメントは単に 'T' として記述できます。'Input' エレメントは 'I' と 'ボタン' として書き込むことができます。 したがって、単一行のウィンドウ コードは次のようになります:
 
 ```python
 event, values = sg.Window('Window Title', [[sg.T("あなたの名前は何ですか?")],[sg.I()],[sg.B('はい')]]).read(close=True)
@@ -346,16 +346,16 @@ GUI コードをあるフレームワークから別のフレームワークに�
 
 パッケージ |説明 |
 |--|--|
- マトプロプリブ |グラフやプロットの多くの種類 |
- オープンCV |コンピュータビジョン (AI でよく使用) |
+ Matplotlib |グラフやプロットの多くの種類 |
+ OpenCV |コンピュータビジョン (AIでよく使用) |
  VLC |ビデオ再生 |
- ピムンク |物理エンジン|
- サイプチ |システム環境の統計 |
- エビ |レディット API |
-json |PySimpleGUI は、「ユーザー設定」を格納する特別な API をラップします。 |
- 天気 |天気アプリを作るためにいくつかの天気APIと統合 |
- ミド |MIDI 再生 |
- 美しいスープ |ウェブスクレイピング (GitHub 問題ウォッチャーの例) |
+ pymunk |物理エンジン|
+ psutil |システム環境の統計 |
+ prawn |Reddit  API |
+json |PySimpleGUI は、「ユーザー設定」を格納する特別なAPIをラップします。 |
+ weather |お天気アプリを作るためにいくつかの天気APIと統合 |
+ mido |MIDI 再生 |
+ beautiful soup |ウェブスクレイピング (GitHub issueウォッチャーでの例) |
 
 <hr>
 
@@ -500,7 +500,7 @@ window = sg.Window('My window', layout, no_titlebar=True, alpha_channel=0.5)
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Solitaire.gif"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Solitaire.gif"  alt="img" align="right" width="500px"></a>
 <br><br>
 
-カードゲームは、画像の操作が簡単なように、PySimpleGUIでうまく動作しますが、それは、PySimpleGUI  'グラフ'要素を使用する場合に簡単です。
+カードゲームは、画像の操作が簡単なように、PySimpleGUIでうまく動作しますが、それは、PySimpleGUI  'グラフ'エレメントを使用する場合に簡単です。
 
 ゲーム開発用の SDK としては特に記述されていませんが、PySimpleGUI はゲームの開発を非常に簡単にします。<br><br>
 <br><br>
@@ -556,7 +556,7 @@ GUI には、**ユーザーエクスペリエンスを変更する**を「GUI �
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/CPU%20Cores%20Dashboard%202.gif"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/CPU%20Cores%20Dashboard%202.gif"  alt="img" align="right" width="500px"></a>
 
 Gui でデータを表示し、操作するのは、PySimpleGUIを使用して簡単です。 いくつかのオプションがあります。
-組み込みの描画/グラフ作成機能を使用して、カスタムグラフを作成できます。 この CPU 使用率モニタは'グラフ' 要素を使用します
+組み込みの描画/グラフ作成機能を使用して、カスタムグラフを作成できます。 この CPU 使用率モニタは'グラフ' エレメントを使用します
 <br><br>
 <br><br>
 <br><br>
@@ -635,7 +635,7 @@ PySimpleGUIはPython 3.4に対応しているため、ラズベリーパイプ�
 </p>
 
 
-ほとんどの GUI フレームワークでは、作成するすべてのウィジェットの色を指定する必要があります。  PySimpleGUI は、あなたからこの雑用を取り、自動的に選択したテーマに合わせて要素を着色します。
+ほとんどの GUI フレームワークでは、作成するすべてのウィジェットの色を指定する必要があります。  PySimpleGUI は、あなたからこの雑用を取り、自動的に選択したテーマに合わせてエレメントを着色します。
 
 テーマを使用するには、ウィンドウを作成する前にテーマ名を指定して 'テーマ' 関数を呼び出します。読みやすくするためにスペースを追加できます。 テーマを「ダークグレー9」に設定するには:
 ```python
@@ -681,7 +681,7 @@ PySimpleGUIにはオープンソースライセンスがあり、そのまま残
 
 
 
-###GitHubスポンサー
+### GitHubスポンサー
 
 <a href="https://github.com/sponsors/PySimpleGUI" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=%3Curl%3E&color=f88379"></a>
 
@@ -702,5 +702,15 @@ PySimpleGUI は現在、オープンソースライセンスでライセンス�
 PySimpleGUIのreadmeのこのバージョンは、[@M4cs](https://github.com/M4cs)の助けを借りずに一緒に来なかったでしょう。彼は素晴らしい開発者であり、プロジェクトの立ち上げ以来のPySimpleGUIサポーターです。  [@Israel Dryer](https://github.com/israel-dryer)は、別の長期的なサポーターであり、パッケージの機能の封筒を押したいくつかのPySimpleGUIプログラムを書いています。 ボードの画像を使用するユニークな掃海艇は、Israelによって作成されました。 [@jason990420](https://github.com/jason990420)は、彼はあなたが上の写真だけでなく、PySimpleGUIで作られた最初の掃海ゲームを見てPySimpleGUI、PySimpleGUIを使用して最初のカードゲームを公開したときに多くの驚きました。
 
 PySimpleGUIを使用する1,100以上のGitHubリポジトリは、このプロジェクトのエンジンを刺激するインスピレーションとなっているのはあなたのために、「ありがとう」を負っています。 一晩Twitterに投稿する海外ユーザーは、PySimpleGUIで一日の仕事を始める火花ですPySimpleGUI.開発エンジンを開始し、毎日実行する準備ができているポジティブなエネルギーの源となっています。 あなたは、オープンソース開発者が望むことができる最高のユーザーコミュニティでした。
+
+This version of the PySimpleGUI readme wouldn't have come together without the help from @M4cs. He's a fantastic developer and has been a PySimpleGUI supporter since the project's launch. @israel-dryer is another long-term supporter and has written several PySimpleGUI programs that pushed the envelope of the package's capabilities. The unique minesweeper that uses an image for the board was created by Israel. @jason990420 surprised many when he published the first card game using PySimpleGUI that you see pictured above as well as the first minesweeper game made with PySimpleGUI. The Japanese version of the readme was greatly improved with help from @okajun35.
+
+The more than 1,200 GitHub repos that use PySimpleGUI are owed a "Thank You" as well, for it is you that has been the inspiration that fuels this project's engine.
+
+The overseas users that post on Twitter overnight are the spark that starts the day's work on PySimpleGUI. They've been a source of positive energy that gets the development engine started and ready to run every day. As a token of appreciation, this readme file has been translated into Japanese.
+
+You've all been the best user community an Open Source developer could hope for.
+
+© Copyright 2020 PySimpleGUI.org
 
 &copy; Copyright 2020 PySimpleGUI.org 
