@@ -4,7 +4,7 @@
   <h2 align="center">人間のためのPythonのGUI</h2>
 </p>
 
-tkinter、Qt、WxPython、およびレミ(ブラウザベースの)GUIフレームワークを、よりシンプルなインタフェースに変換します。ウィンドウ定義は初心者が理解するPythonコアデータ型 (リストと辞書) を使用して簡略化されます。コールバックベースのモデルからメッセージを渡すモデルにイベント処理を変更することでさらに単純化が行われます。 
+tkinter、Qt、WxPython、およびRemi(ブラウザベース)のGUIフレームワークを、よりシンプルなインタフェースに変換します。ウィンドウ定義は初心者が理解するPythonコアデータ型 (リストと辞書) を使用して簡略化されます。コールバックベースのモデルからメッセージを渡すモデルにイベント処理を変更することでさらに単純化が行われます。 
 
 コードはより多くのユーザーがパッケージを使用するのにオブジェクト指向アーキテクチャを持つ*必要はありません*。アーキテクチャは理解しやすいものですが、必ずしも*単純*な問題だけに制限されるわけではありません。
 
@@ -656,13 +656,13 @@ sg.theme('dark grey 9')
 
 # サポート:muscle:
 
-最初のストップは[ドキュメンテーション](http://www.PySimpleGUI.org)と[デモプログラム](http://Demos.PySimpleGUI.org)でなければなりません。 あなたはまだ質問があるか、助けが必要な場合. 大丈夫。。。ヘルプは無償で、あなたに利用可能です。PySimpleGUI GitHubリポジトリで[問題を提出PySimpleGUI](http://Issues.PySimpleGUI.org)するだけで、ヘルプが表示されます。
+最初のステップは[ドキュメンテーション](http://www.PySimpleGUI.org)と[デモプログラム](http://Demos.PySimpleGUI.org)でなければなりません。 です。もしまだ質問があったり、ヘルプが必要な場合は...問題ありません...ヘルプは無料で提供されています。PySimpleGUIのGitHubリポジトリで[Issueを提出](http://Issues.PySimpleGUI.org)するだけで、助けが得られます。
 
-ほぼすべてのソフトウェア会社は、バグレポートに付随するフォームを持っています。 それは悪い貿易ではありません.フォームに記入し、フリーソフトウェアのサポートを受ける。 この情報は、効率的に回答を得るのに役立ちます。
+ほとんどのソフトウェア会社は、バグレポートに付随するフォームを持っています。 それは悪い取引ではありません.フォームに必要事項記入すれば、無料でソフトウェアのサポートを受けられます。この情報は効率的に回答を得るのに役立ちます。
 
-PySimpleGUIのバージョン番号や基になる GUI フレームワークなどの情報を要求するだけでなく、問題の解決に役立つ項目のチェックリストも提供されます。
+PySimpleGUIのバージョン番号や基になるGUIフレームワークなどの情報を要求するだけでなく、問題の解決に役立つかもしれない項目のチェックリストも提供されます。
 
-***フォームに記入してください 。*** それはあなたに無意味に感じるかもしれません。 ほんの少し時間が取っているにもかかわらず、それは痛みを感じるかもしれません。 ソリューションを迅速に入手できます。 迅速な返信と修正を得るのに役立つ情報が役に立たない場合は、入力を求められません。 「私があなたを助ける」。
+***フォームに記入してください 。*** 　あなたには無意味に感じるかもしれません。ほんの一瞬ですが苦痛に感じるかもしれません。記入はあなたがより早く解決策を得るのに役立ちます。もしあなたがスピーディーな回答と解決を得るために役立つ必要な情報でなければ、記入は必要ではありません。「私はあなたを助けるために私を助ける」。
 
 
 # サポート	<a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/PSGSuperHero.png"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/PSGSuperHero.png"  alt="img"  width="90px"></a>
@@ -673,9 +673,9 @@ PySimpleGUI は作成するのに安価ではありませんでした。愛の�
 
 PySimpleGUIにはオープンソースライセンスがあり、そのまま残ることができれば素晴らしいことです。 お客様またはお客様の会社 (特に企業でPySimpleGUIを使用している場合) が、PySimpleGUIを使用して経済的に利益を得ている場合は、プロジェクトの寿命を延長する機能を持ちます。
 
-###　コーヒーを買って
+###　Buy Me a Coffee
 
-私にコーヒーを買うことは、開発者を公的にサポートするための素晴らしい方法です。 それは迅速で簡単で、あなたの貢献は、あなたがPySimpleGUIの支持者であることを他の人が見ることができるように記録されます。 寄付を非公開にすることもできます。
+「Buy Me a Coffee」は、開発者を公的にサポートするための素晴らしい方法です。 素早く、簡単に、貢献は記録されるので、あなたがPySimpleGUI のサポーターであることを他の人に見せられます。寄付を非公開にもできます。
 
 <a href="https://www.buymeacoffee.com/PySimpleGUI" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" width="217px" ></a>
 
@@ -685,32 +685,30 @@ PySimpleGUIにはオープンソースライセンスがあり、そのまま残
 
 <a href="https://github.com/sponsors/PySimpleGUI" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&link=%3Curl%3E&color=f88379"></a>
 
-[GitHub定期的なスポンサーシップ](https://github.com/sponsorsー/PySimpleGUI)は、継続的にさまざまなレベルのサポートでプロジェクトをスポンサーする方法です。これは、企業レベルのスポンサーシップを受けることができるオープンソースの開発者の数です。
-プロジェクトに財政的に貢献するあなたの助けは非常に高く評価されます。オープンソース開発者であることは、財政的に困難です。YouTube 動画クリエイターは、動画を作成して生計を立てることができます。オープンソース開発者にとってはまだ簡単ではありません。
-#貢献:construction_worker:
+[GitHub定期的なスポンサーシップ](https://github.com/sponsorsー/PySimpleGUI)は、継続的にさまざまなレベルのサポートでプロジェクトをスポンサーする方法です。これにより、多くのオープンソース開発者が企業レベルのスポンサーシップを受けられます。
 
-PySimpleGUI は現在、オープンソースライセンスでライセンスされていますが、プロジェクト自体は独自の製品のように構成されています。 プル要求は受け付けられません。
+プロジェクトに金銭的に貢献していただけると、非常にありがたいです。オープンソースの開発者であることは、経済的に困難です。YouTube動画のクリエイターは、動画作成で生計を立てています。オープンソース開発者にとってはまだそれほど簡単ではありません。
+# 貢献:construction_worker:
 
-貢献する最も良い方法の 1 つは、アプリケーションの作成と公開です。 ユーザーは、他のユーザーが構築するものを見てインスピレーションを得ています。 GitHub リポジトリを作成し、コードを投稿し、リポジトリの Readme ファイルにスクリーンショットを含めます。  
+PySimpleGUI は現在、オープンソースライセンスでライセンスされていますが、プロジェクト自体は製品のように構成されています。プルリクエストは受け付けられません。
 
-必要な機能が不足している場合、または提案する機能が強化されている場合は、[問題を開く](https://github.com/PySimpleGUI/PySimpleGUI/issues/new?assignees=&labels=&template=issue-form---must-fill-in-this-form-with-every-new-issue-submitted.md&title=%5B+Enhancement%2FBug%2FQuestion%5D+My+problem+is.)) 
+貢献する最も良い方法の1つは、アプリケーションの作成と公開です。 ユーザーは、他のユーザーが構築するものを見てインスピレーションを得ています。 GitHubリポジトリを作成し、コードを投稿して、リポジトリのReadmeファイルにスクリーンショットを含めてください。  
+
+不足している機能があったり、機能強化を提案したい場合は、[issueを開いてください](https://github.com/PySimpleGUI/PySimpleGUI/issues/new?assignees=&labels=&template=issue-form---must-fill-in-this-form-with-every-new-issue-submitted.md&title=%5B+Enhancement%2FBug%2FQuestion%5D+My+problem+is.)) 。
 
 
 # 特別な感謝 :pray:
 
 
-PySimpleGUIのreadmeのこのバージョンは、[@M4cs](https://github.com/M4cs)の助けを借りずに一緒に来なかったでしょう。彼は素晴らしい開発者であり、プロジェクトの立ち上げ以来のPySimpleGUIサポーターです。  [@Israel Dryer](https://github.com/israel-dryer)は、別の長期的なサポーターであり、パッケージの機能の封筒を押したいくつかのPySimpleGUIプログラムを書いています。 ボードの画像を使用するユニークな掃海艇は、Israelによって作成されました。 [@jason990420](https://github.com/jason990420)は、彼はあなたが上の写真だけでなく、PySimpleGUIで作られた最初の掃海ゲームを見てPySimpleGUI、PySimpleGUIを使用して最初のカードゲームを公開したときに多くの驚きました。
+PySimpleGUIのこのバージョンのreadmeは[@M4cs](https://github.com/M4cs)の助けなしでは実現しませんでした。彼は素晴らしい開発者で、プロジェクトの立ち上げからずっとPySimpleGUIのサポーターです。 [@Israel Dryer](https://github.com/israel-dryer)もまた長期的なサポーターであり、パッケージの機能の限界を押し広げたいくつかのPySimpleGUIプログラムを書いています。 ボードの画像を使用したユニークなマインスイーパーはIsraelにが作成しました。 [@jason990420](https://github.com/jason990420)は上の写真のような、PySimpleGUI を使った最初のカードゲームと、PySimpleGUI で作られた最初のマインスイーパゲームを公開して、多くの人を驚かせました。
+日本語版の readme は[@okajun35](https://github.com/okajun35) さんの協力で大幅に改善されました。
 
-PySimpleGUIを使用する1,100以上のGitHubリポジトリは、このプロジェクトのエンジンを刺激するインスピレーションとなっているのはあなたのために、「ありがとう」を負っています。 一晩Twitterに投稿する海外ユーザーは、PySimpleGUIで一日の仕事を始める火花ですPySimpleGUI.開発エンジンを開始し、毎日実行する準備ができているポジティブなエネルギーの源となっています。 あなたは、オープンソース開発者が望むことができる最高のユーザーコミュニティでした。
+PySimpleGUI を使用している 1,200 以上の GitHub リポジトリにも「ありがとう」の言葉があります。このプロジェクトのエンジンを動かしているのは、あなたのインスピレーションのおかげです。
 
-This version of the PySimpleGUI readme wouldn't have come together without the help from @M4cs. He's a fantastic developer and has been a PySimpleGUI supporter since the project's launch. @israel-dryer is another long-term supporter and has written several PySimpleGUI programs that pushed the envelope of the package's capabilities. The unique minesweeper that uses an image for the board was created by Israel. @jason990420 surprised many when he published the first card game using PySimpleGUI that you see pictured above as well as the first minesweeper game made with PySimpleGUI. The Japanese version of the readme was greatly improved with help from @okajun35.
+一晩中Twitter に投稿してくれる海外のユーザーは、PySimpleGUIの一日の作業を始めるきっかけとなります。彼らはポジティブなエネルギーの源であり、開発エンジンを始動させ、毎日稼働させる準備をしてくれています。感謝の意を込めて、このreadmeファイルを(日本語)[https://github.com/PySimpleGUI/PySimpleGUI/blob/master/readme.ja.md]に翻訳しました。
 
-The more than 1,200 GitHub repos that use PySimpleGUI are owed a "Thank You" as well, for it is you that has been the inspiration that fuels this project's engine.
+皆さんはオープンソース開発者が望む最高のユーザーコミュニティです。
 
-The overseas users that post on Twitter overnight are the spark that starts the day's work on PySimpleGUI. They've been a source of positive energy that gets the development engine started and ready to run every day. As a token of appreciation, this readme file has been translated into Japanese.
 
-You've all been the best user community an Open Source developer could hope for.
-
-© Copyright 2020 PySimpleGUI.org
 
 &copy; Copyright 2020 PySimpleGUI.org 
