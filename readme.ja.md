@@ -453,33 +453,33 @@ sg.popup('入力した', filename)
 
 <br>
 
-## レインメーター- スタイルウィンドウ
+## Rainmeter風スタイルウィンドウ
 
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/RainmeterStyleWidgets.jpg"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/RainmeterStyleWidgets.jpg"  alt="img" align="right" width="500px"></a>
-GUI フレームワークのデフォルト設定では、見栄えの良いウィンドウが生成される傾向はありません。 ただし、細部に注意して、ウィンドウを魅力的に見せるためにいくつかのことを行うことができます。 PySimpleGUI を使用すると、タイトル バーを削除するなどの色や機能を簡単に操作できます。 結果として、一般的な tkinterウィンドウとは異なったウィンドウが表示されます。
+GUIフレームワークのデフォルト設定では見栄えの良いウィンドウは作成できません。しかし細部に注意することでウィンドウを魅力的に見せるためにいくつかのことをおこなえます。 PySimpleGUIは、色やタイトルバーの削除などの機能をより簡単に操作できます。 その結果、典型的なtkinterのようには見えないウィンドウができます。
 
-ここでは、ウィンドウ内の典型的なtkinterのように見えないウィンドウを作成する方法の例を示します。 この例では、ウィンドウのタイトル バーが削除されています。 結果はRainmeter、デスクトップウィジェットプログラムを使用する場合に見られるものとよく似た窓です。
+ここでは、典型的なtkinterのように見えないウィンドウをWindowsで作成する方法の例を紹介します。 この例ではウィンドウのタイトル バーが削除されています。その結果としてデスクトップウィジェットプログラムのRainmeterように見えるウィンドウができあがります。
 
 <br><br>
-ウィンドウの透明度も簡単に設定できます。 ここでは、同じRainmeterスタイルのデスクトップウィジェットの例を紹介します。 半透明であるため、淡色表示されているものもあります。
+ウィンドウの透明度も簡単に設定できます。 同じRainmeterスタイルのデスクトップウィジェットの他の例を紹介します。 半透明なので、薄暗く表示される場合もあります。
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/semi-transparent.jpg"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/semi-transparent.jpg"  alt="img" align="right" width="500px"></a>
 
 
 
-タイトルバーを削除titlebarし、ウィンドウを半透明にするこれらの効果の両方は、ウィンドウを作成するときに2つのパラメータを設定することによって達成されます。 これは、PySimpleGUIが機能に簡単にアクセスできるようにする方法の例です。 また、PySimpleGUI コードは GUI フレームワーク間で移植可能であるため、Qt などの他のポートでも同様のパラメータが使用できます。
+タイトルバーの削除とウィンドウの半透明化の両方の効果はウィンドウを作成する際に2つのパラメータを設定することで実現しています。 これはPySimpleGUIがいかに機能に簡単にアクセスできるかを示す例です。 また、PySimpleGUI のコードはGUIフレームワーク間で移植可能なので、Qtのような他のポートでも同じパラメータで動作します。
 
 
-例 1 の Window 作成呼び出しを次のコード行に変更すると、同様の半透明ウィンドウが生成されます:
+例１のウィンドウ作成の呼び出しを以下のコードに変更すると同様の半透明のウィンドウが作成されます。
 ```python
 window = sg.Window('My window', layout, no_titlebar=True, alpha_channel=0.5)
 ```
 
 ## ゲーム
 
-ゲーム開発用の SDK としては特に記述されていませんが、PySimpleGUI はゲームの開発を非常に簡単にします。
+ゲーム開発用の SDK としては特に記述されていませんが、PySimpleGUIはゲームの開発を非常に簡単にします。
 
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Chess.png"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Chess.png"  alt="img" align="right" width="500px"></a>
-このチェスプログラムはチェスをするだけでなく、ストックフィッシュチェスをするAIと統合します。
+このチェスプログラムはチェスをするだけでなく、チェスAI「Stockfish」を統合します。
 <br><br><br><br><br><br><br><br><br>
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Minesweeper.gif"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Minesweeper.gif"  alt="img" align="right" width="500px"></a>
 マインスイーパのいくつかのバリエーションがユーザーによってリリースされました。
@@ -494,9 +494,9 @@ window = sg.Window('My window', layout, no_titlebar=True, alpha_channel=0.5)
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Solitaire.gif"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Solitaire.gif"  alt="img" align="right" width="500px"></a>
 <br><br>
 
-カードゲームは、画像の操作が簡単なように、PySimpleGUIでうまく動作しますが、それは、PySimpleGUI  'グラフ'要素を使用する場合に簡単です。
+PySimpleGUIの`Graph`エレメントを使用すると画像の操作が簡単なので、カードゲームはPySimpleGUIを使用すると簡単です。
 
-ゲーム開発用の SDK としては特に記述されていませんが、PySimpleGUI はゲームの開発を非常に簡単にします。<br><br>
+ゲーム開発用のSDKとして書かれたわけではありませんが、PySimpleGUIはゲームの開発を非常に簡単にします。<br><br>
 <br><br>
 <br><br><br>
 
@@ -506,9 +506,9 @@ window = sg.Window('My window', layout, no_titlebar=True, alpha_channel=0.5)
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/OpenCV.jpg"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/OpenCV.jpg"  alt="img" align="right" width="400px"></a>
 
 
-WEB カメラから GUI でビデオをキャプチャして表示するのは、PySimpleGUIコードの 4 行です。 さらに印象的なのは、これらの 4 行のコードが tkinter、Qt、および Web ポートで動作することです。  tkinterを使用して画像を表示するのと同じコードを使用して、ブラウザで Webカメラをリアルタイムで表示できます。
+WEBカメラからビデオをキャプチャしてGUIで表示するのには、PySimpleGUIのコードでは4行でできます。 さらに印象的なのはこらの4行のコードが tkinter、Qt、および Web ポートで動作します。  tkinterを使用して画像を表示するのと同じコードを使用して、ブラウザでWebカメラをリアルタイムが表示できます。
 
-メディア再生、オーディオおよびビデオ、VLCプレーヤーを使用して達成することもできる。 デモ アプリケーションが提供され、最初から作業する例が用意されています。この readme に表示されるすべてのものは、独自の作品の出発点として利用できます。
+また、VLCプレーヤーを使って、オーディオやビデオなどのメディア再生も可能です。デモアプリケーションが提供されているので実際の作業例が用意されています。このreadmeに記載されている内容は全て、あなた自身の創作の出発点として利用できます。
 <br><br><br><br><br>
 <br><br><br><br><br>
 <br><br>
@@ -518,16 +518,16 @@ WEB カメラから GUI でビデオをキャプチャして表示するのは�
 
 
 
-AIとPythonは、両者がペアになったときに長い間認識された超大国でした。しかし、多くの場合、GUI を使用してこれらの AI アルゴリズムを操作する方法が欠けています。
+AIとPythonは長い間、この2つが組み合わされたときのスーパーパワーとして認識されてきました。しかし、多くの場合、ユーザーがGUIを使用してこれらのAIアルゴリズムを身近に操作する方法が欠けています。
 
-これらの YOLO のデモは、GUI が AI アルゴリズムとの対話に大きな違いをもたらす方法の素晴らしい例です。 これらのウィンドウの下部に 2 つのスライダーがあることに注意してください。 これらの2つのスライダーは、YOLOアルゴリズムで使用されるパラメータのカップルを変更します。  
+これらのYOLOのデモは、GUIがAIアルゴリズムとの対話においていかに大きな違いをもたらすかの素晴らしい例です。 これらのウィンドウの下部にある2つのスライダーに注目してください。 この2つのスライダーは、YOLOアルゴリズムが使用するパラメータを変更します。 
 
-コマンドラインのみを使用して YOLO デモをチューニングする場合は、アプリケーションを起動するときに、パラメーターを設定し、その実行方法を確認し、アプリケーションを停止し、パラメーターを変更し、最後に新しいパラメーターでアプリケーションを再起動する必要があります。
+コマンドラインのみを使用してYOLOデモをチューニングする場合は、アプリケーションを起動するときに、パラメーターを設定し、その実行方法を確認し、アプリケーションを停止し、パラメーターを変更し、最後に新しいパラメーターでアプリケーションを再起動する必要があります。
 <br><br><br><br>
 
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/YOLO%20Object%20Detection.jpg"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/YOLO%20Object%20Detection.jpg"  alt="img" align="right" width="500px"></a>
 
-これらのステップと、GUI を使用して実行できる操作と対比します。 GUI を使用すると、これらのパラメータをリアルタイムで変更できます。 アルゴリズムにどのような影響を与えているかについて、すぐにフィードバックを得ることができます。
+これらのステップと、GUIを使用して実行できる操作と比較してみます。 GUIを使用すると、これらのパラメータをリアルタイムで変更できます。 アルゴリズムにどのような影響を与えているかについて、すぐにフィードバックを得られます。
 
 
 
@@ -536,11 +536,11 @@ AIとPythonは、両者がペアになったときに長い間認識された超
 <a href="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Colorizer.jpg"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Colorizer.jpg"  alt="img" align="right" width="500px"></a>
 
 
-公開されている AI プログラムには、コマンド ライン駆動のプログラムが多数あります。 これ自体は大きなハードルではありませんが、コマンドラインで色分けしたいファイル名を入力/貼り付け、プログラムを実行し、結果の出力ファイルをファイルビューアで開くには十分な「お尻の痛み」です。
+公開されているAIプログラムには、コマンドラインで動かすプログラムが非常に多く存在します。 これ自体は大きなハードルではありませんが、コマンドラインでカラーリングしたいファイル名を入力/貼り付け、プログラムを実行して、出力ファイルの結果をファイルビューアで開くには十分「面倒くさい」です。
 
 
-GUI には、**ユーザーエクスペリエンスを変更する**を「GUI ギャップ」に埋める権限があります。 この着色剤の例では、ユーザーは画像でいっぱいのフォルダを指定し、画像をクリックするだけで結果を色分けして表示できます。  
-色付けを行うプログラム/アルゴリズムは自由に利用可能で、使用する準備ができていました。 不足していたのは、GUI がもたらす使いやすさです。
+GUI には、**ユーザーエクスペリエンスを変更する**を「GUIギャップ」に変化させる力があります。 このカラーライズの例では、ユーザーは画像が格納されてたフォルダを指定して、画像をクリックするだけでカラーリングと結果表示の両方を行えます。  
+カラーライズを行うプログラム/アルゴリズムは自由に利用可能で、使用可能でした。 不足していたのはGUIがもたらす使いやすさです。
 
 
 <hr>
